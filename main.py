@@ -24,5 +24,5 @@ async def send_wikipedie(message: types.Message):
         await message.answer(f"Information about \"{search}\" is not found in en.wikipedia.org site")
         print(excp)
 
-if name == "main":
+if __name__ == "__main__":
     executor.start_polling(dp, skip_updates=True)
